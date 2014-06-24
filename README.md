@@ -33,3 +33,5 @@ Sample code for understanding OpenStreetMap data use.
 1. Consider changing the type of feature on the map. You could query for streets and add them as [polylines](http://leafletjs.com/reference.html#polyline) or for buildings and add them as [polygons](http://leafletjs.com/reference.html#polygon). 
 
 1. You could [signup for a free Mapbox account](https://www.mapbox.com/plans/) and then create a [custom basemap style](https://www.mapbox.com/foundations/customizing-the-map). You'll obtain a [map ID](https://www.mapbox.com/foundations/share-your-map/#mapid) which you can use in the `L.mapbox.map()` call in `index.html`. 
+
+1. Try some other [Leaflet](http://leafletjs.com/examples.html) and [Mapbox.js](https://www.mapbox.com/mapbox.js) APIs to do new and different things with your queried OSM data. 
