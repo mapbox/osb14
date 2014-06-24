@@ -529,8 +529,10 @@ var geojson =
 ;
 
 var map = L.mapbox.map('map', 'examples.map-i86nkdio')
-    .setView([45.52, -122.681944], 15)
-    .featureLayer.setGeoJSON(geojson);
+    .setView([45.52, -122.681944], 15);
+
+var overlay = L.mapbox.featureLayer().addTo(map)
+    .setGeoJSON(geojson);
 </script>
 
 </body>
