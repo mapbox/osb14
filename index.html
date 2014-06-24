@@ -528,9 +528,20 @@ var geojson =
 }
 ;
 
+// Setup a basic map centered on Portland.
+//
 var map = L.mapbox.map('map', 'examples.map-i86nkdio')
     .setView([45.52, -122.681944], 15);
 
+// Add some styling properties to the GeoJSON pasted above.
+//
+for (var i = 0; i < geojson.features.length; i++) {
+    geojson.features[i].properties['marker-color'] = '#00f';
+    geojson.features[i].properties['marker-symbol'] = 'water';
+}
+
+// Create an overlay with popups from the GeoJSON.
+//
 var overlay = L.mapbox.featureLayer().addTo(map)
     .setGeoJSON(geojson)
     .eachLayer(function(layer) {
