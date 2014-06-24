@@ -1,4 +1,4 @@
-osb14
-=====
+Open Source Bridge '14 OpenStreetMap Workshop
+=============================================
 
-Exercises for Open Source Bridge '14 OpenStreetMap workshop
+Sample code for understanding OpenStreetMap data use. 
