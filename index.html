@@ -532,7 +532,12 @@ var map = L.mapbox.map('map', 'examples.map-i86nkdio')
     .setView([45.52, -122.681944], 15);
 
 var overlay = L.mapbox.featureLayer().addTo(map)
-    .setGeoJSON(geojson);
+    .setGeoJSON(geojson)
+    .eachLayer(function(layer) {
+        var osmID = layer.feature.id.replace('node/', '');
+        var content = 'OSM ID <a href="http://openstreetmap.org/node/' + osmID + '" target="_new">' + osmID + '</a>';
+        layer.bindPopup(content);
+    });
 </script>
 
 </body>
