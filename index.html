@@ -4,8 +4,8 @@
 <meta charset=utf-8 />
 <title>OSM Example</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -530,7 +530,8 @@ var geojson =
 
 // Setup a basic map centered on Portland.
 //
-var map = L.mapbox.map('map', 'examples.map-i86nkdio')
+L.mapbox.accessToken = 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImdQMzI4WjgifQ.d-Uyr7NBjrJVz9z82uk5Xg';
+var map = L.mapbox.map('map', 'mapbox.outdoors')
     .setView([45.52, -122.681944], 15);
 
 // Add some styling properties to the GeoJSON pasted above.
